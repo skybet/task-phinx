@@ -1,0 +1,17 @@
+<?php
+
+require 'vendor/autoload.php';
+
+use Task\Plugin;
+
+$project = new Task\Project('lmrs/task-phinx');
+
+$project->inject(function ($container) {
+    $container['phpspec'] = new Plugin\PhpSpecPlugin;
+});
+
+$project->addTask('test', ['phpspec', function($phpspec) {
+    $phpspec->command('run')->pipe($this->getOutput());
+}]);
+
+return $project;

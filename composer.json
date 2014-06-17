@@ -1,0 +1,24 @@
+{
+    "name": "lmrs/task-phinx",
+    "description": "Phinx plugin for Task",
+    "authors": [
+        {
+            "name": "Craig Lumley",
+            "email": "craig@craiglumley.com"
+        }
+    ],
+    "require": {
+        "task/plugin": "~1.0",
+        "task/console": "~0.3",
+        "robmorgan/phinx": "~0.3"
+    },
+    "require-dev": {
+        "task/task": "~0.5",
+        "task/phpspec": "~0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Task\\Plugin\\": "src/"
+        }
+    }
+}
