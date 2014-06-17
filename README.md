@@ -1,6 +1,8 @@
 lmrs/task-phinx
 ============
 
+Phinx plugin for Task PHP. For more information and documentation goto [taskphp.github.io](http://taskphp.github.io).
+
 Example
 =======
 
